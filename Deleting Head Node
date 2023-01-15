@@ -1,0 +1,7 @@
+//Deleting node at head
+       public static void deleteFromHead() {
+    	   if(head==null) {
+    		   return;
+    	   }
+    	   head=head.next;
+       }
