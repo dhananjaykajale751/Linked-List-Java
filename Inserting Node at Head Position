@@ -1,0 +1,11 @@
+//Inserting new node at head position
+       public static void insertAtHead(int data) {
+		
+    	   Node newnode = new Node(data);
+    	   if(head == null) {
+    		   head=newnode;
+    		   return;
+    	   }
+    	   newnode.next=head;
+    	   head=newnode;
+       }
