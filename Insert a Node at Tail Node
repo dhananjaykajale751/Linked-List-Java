@@ -1,0 +1,16 @@
+//Inserting new node at tail position
+       public static void insertAtTail(int data) {
+           Node newNode = new Node(data);
+     
+           if(head == null) {
+               head = newNode;
+               return;
+           }
+     
+           Node lastNode = head;
+           while(lastNode.next != null) {
+               lastNode = lastNode.next;
+           }
+     
+           lastNode.next = newNode;
+       }
