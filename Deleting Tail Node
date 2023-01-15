@@ -1,0 +1,16 @@
+//Deleting Node at tail 
+       public static void deleteFromTail() {
+    	   if(head==null) {
+    		   return;
+    	   }
+    	   if(head.next==null) {
+    		   head=null;
+    	   }
+    	   Node secondLast=head.next;
+    	   Node lastnode = secondLast.next;
+    	  while(lastnode.next!=null) {
+    		  lastnode=lastnode.next;
+    		  secondLast=secondLast.next;
+    	  }
+    	  secondLast.next=null;
+       }
