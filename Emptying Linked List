@@ -1,6 +1,11 @@
 //Deleting entire Linked List
        public static void empty(){
-    	  
+    	      	   if(head==null) {
+    		   return;
+    	   }
+    	   if(head.next==null) {
+    		   head=null;
+    	   }
     	   while(head.next!=null) {
     		   
     		   head = head.next;
